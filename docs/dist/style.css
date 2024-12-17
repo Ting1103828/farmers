@@ -8,6 +8,10 @@
   /* font: normal 100% Helvetica; */
 }
 
+body{
+  height:100vh;
+}
+
 /* 滾動條樣式################################## */
 /* 整個滾動條 */
 ::-webkit-scrollbar {
