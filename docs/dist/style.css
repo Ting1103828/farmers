@@ -661,7 +661,7 @@ p {
 }
 
 #chat-container-morning, #chat-container-evening {
-  margin-top: 50px; /* 控制聊天内容与上方的距离 */
+  margin-top: 30px; /* 控制聊天内容与上方的距离 */
   padding: 10px;
   height: 400px; /* 固定聊天内容高度 */
   overflow-y: auto; /* 启用垂直滚动 */
@@ -792,7 +792,7 @@ h4 {
   border-radius: var(--radius);
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 800;
   z-index: 1;
 
   input[type="checkbox"] {
