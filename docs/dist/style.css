@@ -661,7 +661,7 @@ p {
 }
 
 #chat-container-morning, #chat-container-evening {
-  margin-top: 30px; /* 控制聊天内容与上方的距离 */
+  margin-top: 10px; /* 控制聊天内容与上方的距离 */
   padding: 10px;
   height: 400px; /* 固定聊天内容高度 */
   overflow-y: auto; /* 启用垂直滚动 */
@@ -890,7 +890,7 @@ input[type="checkbox"]:checked + label.switch-toggle-label:before {
   display: flex;
   position: relative;
   align-items: center; /* 垂直居中 */
-  margin-top: 30px; /* 與聊天室的距離 */
+  margin-top: 10px; /* 與聊天室的距離 */
   padding: 10px;
   border-radius: 6px; /* 圓角 */
   background-color: #f0efe6; /* 背景顏色 */
