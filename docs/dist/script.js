@@ -1,3 +1,27 @@
+let currentSVG = null;
+
+// 道路滚动事件
+function updateRoadScroll() {
+  let scrollTop = window.pageYOffset;
+
+  if (currentSVG) {
+    let viewBoxY = scrollTop * 1.5; // 根据滚动调整 viewBox 的 y 值
+    currentSVG.setAttribute('viewBox', `0 ${viewBoxY} 900 1000`); // 只显示新的区域，高度固定为 1000
+  }
+}
+
+// 限制滚动事件触发频率，使用 requestAnimationFrame 提升性能
+let ticking = false;
+window.addEventListener('scroll', function () {
+  if (!ticking) {
+    window.requestAnimationFrame(function () {
+      updateRoadScroll();
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+
 // 早市与黄昏市场的切换功能
 document.addEventListener("DOMContentLoaded", function () {
   const switchToggle = document.getElementById("pricing-plan-switch");
@@ -337,3 +361,4 @@ buttons.forEach(button => {
     }
   });
 });
+
