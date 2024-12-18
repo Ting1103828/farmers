@@ -194,14 +194,12 @@ nav .o:hover {
 /* 針對早市與黃昏市場設置的區塊背景 */
 #content-morning-market {
   background-color: #6F985C; /* 早市背景顏色 */
-  min-height: 135vh; /* 保證覆蓋整個視窗高度 */
   display: none;
   font-family: 'Noto Sans TC', sans-serif;
 }
 
 #content-evening-market {
   background-color: #E9B453; /* 黃昏市場背景顏色 */
-  min-height: 135vh; /* 保證覆蓋整個視窗高度 */
   display: none;
   font-family: 'Noto Sans TC', sans-serif;
 }
@@ -224,7 +222,7 @@ nav .o:hover {
   position: relative;
   top: 100px; /* 调整位置 */
   left: 100px; /* 调整水平位置 */
-  transform: scale(1); /* 放大图片 1.5 倍 */
+  transform: scale(1.2); /* 放大图片 1.5 倍 */
   transform-origin: center; /* 从中心点放大 */
 }
 
